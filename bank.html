@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class=" max-w-screen-xl ">
+        <h1 class="text-3xl text-center mt-6 text-fuchsia-600 font-semibold">
+            Lets get some money
+        </h1>
+
+
+    </header>
+    <main>
+        <section class="mt-10">
+            <div class=" grid grid-cols-3 gap-4  w-9/12 ">
+
+
+                <div class="bg-green-400 px-6 py-10 rounded-xl text-center">
+                    <h4 class="text-2xl">Deposite</h4>
+
+                    <h2 class="text-3xl">$<span id="deposite-total"></span>00</h2> 
+                </div>
+                <div class="bg-blue-400 px-6 py-10 rounded-xl text-center">
+                    <h4 class="text-2xl">Withdraw</h4>
+
+                    <h2 class="text-3xl">$<span id="deposite-total"></span>00</h2> 
+                </div>
+                <div class="bg-red-400 px-6 py-10 rounded-xl text-center">
+                    <h4 class="text-2xl">Balance</h4>
+
+                    <h2 class="text-3xl">$<span id="deposite-total"></span>1200</h2> 
+                </div>
+            </div>
+
+
+        </section>
+
+
+<section class="mt-10">
+    <div class=" grid grid-cols-2 gap-4  w-9/12 ">
+
+
+      
+        <div class="bg-blue-400 px-6 py-10 rounded-xl ">
+            <h4 class="text-2xl">Please deposite</h4>
+
+            <input class="block mb-4 px-6 w-9/12  mt-6 p-3 rounded-md " type="text" 
+            placeholder="$ Amount you want to deposite"
+            id="deposite-field">
+            <button id="btn-submit" class=" rounded-md bg-white  font-semibold text-grey px-5 py-2">Deposite</button>
+           
+        </div>
+        <div class="bg-green-400 px-6 py-10 rounded-xl ">
+            <h4 class="text-2xl">Please Withdraw</h4>
+
+            <input class="block mb-4 px-6 w-9/12  mt-6 p-3 rounded-md " type="text" 
+            placeholder="$ Amount you want to withdraw"
+            id="deposite-field">
+            <button id="btn-withdraw" class=" rounded-md bg-white  font-semibold text-grey px-5 py-2">Withdraw</button>
+           
+        </div>
+       
+    </div>
+
+
+</section>
+
+    </main>
+    <script src="index.js"></script>
+    
+</body>
+</html>
